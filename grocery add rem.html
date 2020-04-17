@@ -1,0 +1,37 @@
+<html>
+<body>
+	<h2>Grocery List</h2>
+<ul id="myList"><li>Frozen food</li>
+  <li>Salad Dressing</li>
+    <li>Canned Foods</li>
+</ul>
+  
+<button onclick="add()">ADD</button>
+<script>
+function add() {
+var node = document.createElement("LI");                 
+var textnode = document.createTextNode("Cereals");         
+node.appendChild(textnode);                              
+document.getElementById("myList").appendChild(node); 
+
+}
+</script>
+<button onclick="rem()">REMOVE</button>
+<script>
+function rem() {
+  var list=document.getElementById("myList");
+  list.removeChild(list.childNodes[0]);
+}
+</script>
+
+<button onclick="rep()">REPLACE</button>
+<script>
+function rep() {
+  var textnode = document.createTextNode("Pasta");
+
+var item = document.getElementById("myList").childNodes[0];
+item.replaceChild(textnode, item.childNodes[0]);
+}
+</script>
+</body>
+</html>

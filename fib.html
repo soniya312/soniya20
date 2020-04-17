@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button type="button" onclick="fib()">Fib</button>
+<button type="button" onclick="odd()">odd</button>
+<button type="button" onclick="eve()">even</button>
+<p id="a"></p>
+<script type="text/javascript">
+	function fib()
+	{
+		var l=prompt("Enter nummber");
+		var f1=-1,f2=1,f3,c;
+		document.getElementById("a").innerHTML="the fib series is";
+		for(c=0;c<l;c++)
+		{
+			f3=f1+f2;
+			document.getElementById("a").innerHTML=document.getElementById("a").innerHTML +f3+"";
+             f1=f2
+             f2=f3;
+		}
+	}
+	function eve(){
+		var l=prompt("Enter nummber");
+		document.getElementById("a").innerHTML="the even series is";
+		var i,count=0;
+		for(i=0;count<l;i+=2)
+		{
+						document.getElementById("a").innerHTML=document.getElementById("a").innerHTML +i+"";
+             count++;
+		}
+
+
+	}
+	function odd(){
+		var l=prompt("Enter nummber");
+		document.getElementById("a").innerHTML="the odd series is";
+		var i,count=0;
+		for(i=1;count<l;i+=2)
+		{
+						document.getElementById("a").innerHTML=document.getElementById("a").innerHTML +i+"";
+             count++;
+		}
+
+
+	}
+
+</script>
+</body>
+</html>

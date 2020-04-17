@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<button onclick="fun()">String Operations</button>
+<div id="a"></div><br>
+<div id="b"></div><br>
+<div id="c"></div><br>
+<div id="d"></div><br>
+<script type="text/javascript">
+	function fun(){
+		var a=prompt("Enter String");
+		var b=prompt("Enter String");
+		var c=prompt("Enter String");
+		var d=prompt("Enter String");
+		document.getElementById("a").innerHTML=a.slice(9,14);
+		document.getElementById("b").innerHTML=b;
+		document.getElementById("c").innerHTML=c;
+		var n=b.lastIndexOf("Exam")
+		document.getElementById("d").innerHTML=n;
+
+	}
+</script>
+</body>
+</html>

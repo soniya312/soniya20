@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>My Array</h1>
+<div>
+	Enter Number Of Elements to insert:
+	<input type="text" id="num" name="">
+	<input type="button" value="Print Array" onclick="add()" name=""><br><br>
+
+	Enter Number Of Elements to insert:
+	<input type="text" id="n" name="">
+	<input type="button" value="Remove" onclick="rem()" name=""><br><br>
+	<div id="get"></div><br><br>
+		<div id="get"></div><br><br>
+</div>
+<script type="text/javascript">
+	function add(){
+		var num=document.getElementById("num").value;
+		var arr=[];
+		for(var i=0;i<num;i++)
+			arr.push(prompt("Enter number"));
+		document.getElementById("get").innerHTML=arr;
+	}
+	</script>
+<script>
+
+	function rem(){
+
+
+			var n=document.getElementById("n").value;
+		var a=[];
+		var old=[];
+a.push(prompt("Enter number"));
+var old=document.getElementById("get").value;
+document.getElementById("ge").innerHTML=old.remove(a);
+}
+</script>
+
+
+</script>
+</body>
+</html>

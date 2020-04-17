@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dp</title>
+	<script type="text/javascript">
+		function day(){
+			var f = new Date();
+			var days = ["Monday","Tuesday","wednesday","Thursday","Friday","Saturday","Sunday"];
+            document.getElementById("a").innerHTML = days[f.getDay()-5];
+			var g = new Date();
+			g.setDate( g.getDate() +3  );
+
+            document.getElementById("b").innerHTML = g.getDate();
+
+			var h = new Date();
+			h.setFullYear( h.getFullYear() - 22 );
+
+            document.getElementById("c").innerHTML = h.getFullYear();
+            var i = new Date();
+            var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            document.getElementById("d").innerHTML = months[i.getMonth()+3];
+		   var j = new Date();
+           document.getElementById("e").innerHTML = j.getTime();
+           
+		
+		}
+	</script>
+</head>
+<body onload="day()">
+<p align="center">Birthday is </p>
+<div align="center"  id="a"></div>
+<p align="center">Birthdate is </p>
+<div align="center" id="b"></div>
+<p align="center">Birthyear is </p>
+<div align="center" id="c"></div>
+<p align="center">Birthmonth is </p>
+<div align="center" id="d"></div>
+<p align="center">Birthtime is </p>
+<div align="center" id="e"></div>
+</body>
+<style type="text/css">
+	div{
+		background-color: lightgreen;
+		font-family: cursive;
+	}
+	body{
+		background-color: lightblue;
+	}
+</style>
+</html>
